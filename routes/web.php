@@ -16,3 +16,10 @@ Route::get('/about', 'WelcomeController@about');
 Route::get('/blog', 'WelcomeController@blog');
 Route::get('/contact', 'WelcomeController@contact');
 
+
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
